@@ -1,2 +1,52 @@
 \section{ME21B190}
 Student shall edit this file and include stuff for the assignment
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title{Assignment 4}
+\author{Sheethal K }
+
+
+\begin{document}
+
+\maketitle
+\section{Navier-stokes equation}
+\begin{figure}[h]
+\centering\includegraphics[width=0.5\textwidth]{air flow}
+\end{figure}
+\subsection {Continuity Equation:}\\[1.2pt]
+
+$$\nabla.\vec{V}=0$$
+
+
+\large\ The countinuity equation describes the trasport of some quantities like fluid or gas.The equation explains how a fluid conserves mass in its motion.\\[1.2pt]
+\subsection {Momentum Equations:}\\[1.5pt]
+
+$$\frac{d\vec{V}}{dt}=\frac{\partial V}{\partial t} + (V.\nabla)V$$\\[0.9pt]
+\ Here the total derivative is the sum of change in velocity with time and the convective term\\[1pt]
+$$\rho\frac{d\vec{V}}{dt}=-\nabla{p} + \rho\vec{g}+\mu\nabla^{2}\vec{V}$$\\[1pt]
+ *The first term in RHS is the "Pressure gradient term" which tells in which direction the fluid flows\\[1pt]
+
+*The second term is the "Body force term",which includes all type of forces\\[1pt]
+
+*The third term "Diffusion term" 
+\section{Explanation of variables}
+\begin{center}
+\begin{tabular}{ | m{5cm} | m{9cm} | }   
+   \hline
+   \textbf{Symbol} & \textbf{Explanation} \\
+   \hline
+   $$\vec{V}$$ & velocity vector \\
+   \hline
+   $\rho$ & density of fluid \\
+   \hline
+   $$\vec{g}$$ & acceleration due to gravity \\
+   \hline
+   $${p}$$ & pressure of fluid \\
+   \hline
+   $$\mu$$ & viscosity of fluid \\
+   \hline
+\end{tabular}
+\end{center}
+\end{document}
