@@ -1,2 +1,37 @@
-\section{AE21B056}
-Student shall edit this file and include stuff for the assignment
+\begin{document}
+
+\title{Beauty of Equations}
+\author{Shreeya Padte}
+\date{\today}
+\maketitle
+
+\section{Convolution Integral and Sum}
+
+\subsection{Equation}
+\subsubsection{Continuous time}
+$$x(t) * h(t) = \int_{-{\infty}}^{\infty}{\text{x}(\tau) \text{ h}(t - \tau)  d\tau} $$
+\subsubsection{Discrete time}
+$$x[n] * h[n] = \sum_{k=-{\infty}}^{\infty} x[k] \hspace{2pt} h[n-k] $$
+
+\subsection{Description}
+\subsubsection{Continuous time}
+It is the representation of a continuous-time linear time-invariant system in terms of its response to a unit impulse.
+\subsubsection{Discrete time}
+This corresponds to the representation of an arbitrary sequence as a linear combination of shifted unit impulses $\delta[n-k]$, where the weights in this linear combination are x[k].
+
+
+\subsection{List of variables}
+\begin{tabular}{l|l|l}
+\hline
+     & Variable & Use  \\
+\hline
+    1 & x(t) & Input signal which is continuous in nature \\
+    2 & x[n] & Input signal which is discrete in nature \\
+    3 & h(t) & Impulse response to x(t) \\
+    4 & h[n] & Impulse response to x[n] \\
+    5 & h[n-k] & Time shifted version of h[n] for computing the convolution sum. \\
+    6 & x(t-$\tau$) & Time shifted version of x(t),for computing the convolution integral. \\
+\hline
+\end{tabular}
+
+\end{document}
