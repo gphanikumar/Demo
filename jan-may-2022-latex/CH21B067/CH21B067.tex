@@ -1,2 +1,76 @@
-\section{CH21B067}
-Student shall edit this file and include stuff for the assignment
+% \section{CH21B067}
+
+
+% \documentclass{article}
+% \usepackage[utf8]{inputenc}
+% \usepackage{hyperref}
+
+\title{Schrödinger's Equation}
+\author{Nishanth Nethaniel Magesh ch21b067}
+\date{June 2022}
+
+% \begin{document}
+
+\maketitle
+
+\section{Description}
+
+Schrödinger's Equation is considered to be one of the essential equations in quantum mechanics. Its role is similar to that of Newton's Laws and Conservation of Energy in Classical Mechanics i.e. predicting the future behaviour of a quantum mechanical system. The solution of this equation gives the wavefunction $\psi$, which can be used to find the probability of the existence of a particle at each point of the system.
+
+\section{Equation}
+
+\begin{equation}
+    i\hbar\frac{\partial}{\partial t}\psi=[-\frac{\hbar^2}{2m}\nabla^2+V]\psi
+\end{equation}
+
+The operators on the left and right sides are often reduced to $\hat{H}$  and $\hat{E}$ respectively for convenience:
+
+\begin{equation}
+    \hat{E}\psi=\hat{H}\psi
+\end{equation}
+
+i.e.$$ \hat{E}=i\hbar\frac{\partial}{\partial t} \:\:\:and\:\:\:\hat{H}= -\frac{\hbar^2}{2m} \nabla^2+V $$
+
+\begin{table}
+    \begin{center}
+    \begin{tabular}{|c|c|}
+    \hline
+        i & Imaginary unit($\sqrt{-1}$) \\
+    \hline
+        $\hbar$ & Reduced Planck's constant \\
+    \hline    
+        m & mass \\
+    \hline    
+        V & Potential field \\
+    \hline    
+        $\psi$ & Wave Function \\
+    \hline    
+        $\hat{E}$ & Energy Operator \\
+    \hline    
+        $\hat{H}$ & Hamiltonian Operator \\
+    \hline
+    \end{tabular}
+\end{center}
+    \caption{Explanation of terms used}
+\end{table}
+
+
+\section{Explanation}
+
+The equation above is more specifically called the time-dependant Schrödinger's equation. It is used to find the evolution of the wavefunction $\psi$ over time. $\hat{H}$ is known as the Hamiltonian Operator, which corresponds to the total energy of the system. It consists of 2 terms:
+
+\begin{itemize}
+    \item -$ \frac{\hbar^2}{2m}\nabla^2 $ - This term is the kinetic energy operator. As the name suggests, it gives the kinetic energy for the wavefunction it operates on
+    \item V - The potential energy function describes the potential energy of the particle
+\end{itemize}
+
+The term $\hat{E}$ is the Total Energy operator. In the simpler time-independent Schrödinger's
+ equation, it is represented as E (without the hat). E is the eigenvalue of the Hamiltonian operator acting on $\psi$
+
+\begin{equation}
+    E\psi=\hat{H}\psi
+\end{equation}
+
+This equation describes quantum stationary states, whose properties don't depend on time i.e. are constant.
+
+\end{document}
