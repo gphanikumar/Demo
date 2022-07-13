@@ -1,2 +1,24 @@
 \section{MM21B044}
-Student shall edit this file and include stuff for the assignment
+
+\subsection{Equation:}
+\textbf{Taylor's Series Expansion:}
+\begin{multline}
+    f(x) \approx f(x_0)+f'(x_0)(x-x_0)+f''(x_0) \frac{(x-x_0)^2}{2!}+...\\
+    ...+f^{n'}(x_0) \frac{(x-x_0)^n}{n!}+...  \infty terms
+\end{multline}
+\[f(x) = \sum_{n=0}^{\infty} f^{(n)}(x_0)\frac{(x-x_0)^n}{n!}\]
+\subsection{Description:}
+\begin{itemize}
+    \item Any function f(x) can be written as a series of its derivatives with respect to x and multiplied by a factor $\frac{(x-x_0)^n}{n!}$.
+    \item \underline{Accuracy of expression} is proportional to no of terms evaluated.
+    \item Eg.\[e^x \approx 1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\hdots+\frac{x^n}{n!}+\hdots\]
+\end{itemize}
+\subsection{Table of Variables:}
+\begin{tabular}{|c|c|c|}
+     \hline
+     \textbf{Variables} & \textbf{Expressions} & \textbf{Explanation} \\ \hline
+     $f'(x_0)$ & df/dx & 1st order Derivative of f(x) with respect to x \\ \hline
+     $f''(x_0)$ & $d^2f/dx^2$ & 2nd order Derivative of f(x) with respect to x \\ \hline
+     \vdots & \vdots & \vdots \\ \hline
+     $f^{(n)}(x_0)$ & $d^nf/dx^n$ & nth order Derivative of f(x) with respect to x \\ \hline
+\end{tabular}
